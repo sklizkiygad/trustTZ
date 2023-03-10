@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utils.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <header class="main-header menu">
+        <div class="menu__logo">
+            <img src="./images/logo.png" alt="l"/>
+        </div>
+
+        <div class="menu__categories"> 
+            <ul class="menu__list">
+                <li class="menu__list__option">
+                    Каталог недвижимости
+                    <div class="menu-list__sub sub-menu"> 
+                        <ul class="sub-menu__main-category">
+                            <li><a href="">Все квартиры</a></li>
+                            <li><a href="">Квартиры в новостройке</a></li>
+                            <li><a href="">Квартиры во вторичке</a></li>
+                            <li><a href="">Акции и скидки</a></li>
+                        </ul>
+
+                        <ul class="sub-menu__sub-category">
+                            <li><a href="">Квартиры студии</a></li>
+                            <li><a href="">1-комнатные квартиры</a></li>
+                            <li><a href="">2-комнатные квартиры</a></li>
+                            <li><a href="">3-комнатные квартиры</a></li>
+                            <li><a href="">4-комнатные квартиры</a></li>
+                            <li><a href="">Квартиры в Воронеже</a></li>
+                        </ul>
+
+                        
+                        <ul class="sub-menu__sub-category">
+                            <li><a href="">Квартиры на правом берегу</a></li>
+                            <li><a href="">Квартиры на левом берегу</a></li>
+                            <li><a href="">Квартиры в Железнодорожном р-не</a></li>
+                            <li><a href="">Квартиры в Советском р-не</a></li>
+                            <li><a href="">Квартиры в Ленинском р-не</a></li>
+                            <li><a href="">Квартиры в Коминтерновском р-не</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="menu__list__option">Ипотека</li>
+                <li class="menu__list__option">О нас</li>
+                <li class="menu__list__option">Карьера</li>
+                <li class="menu__list__option">Отзывы</li>
+                <li class="menu__list__option">Вакансии</li>
+                <li class="menu__list__option">Прочее</li>
+            </ul>
+            <button class="menu__button white-button">
+                Офисы и контакты
+            </button>
+
+        </div>
+
+    </header>
+
+    <div class="main-block">
+        <div class="main-block__headers">
+            <h1>Сотрудничество начинается с доверия</h1>
+            <h4>«Траст» входит в состав Российской Гильдии Риэлторов. 
+                Стандарты качества услуг компании сертифицированы, 
+                деятельность застрахована.</h4>
+        </div>
+
+        <div class="filter-block">
+           
+            <div class="filter-block__selector">
+                Квартира в новостройке <img src="./images/path2.png" alt="p2"/> 
+                <div class="filter-block__selector__menu ">
+                    <div class="filter-block__selector__menu__buttons">
+                        <input type="radio" name="select" id="living" value="living">
+                        <label for="living" class="left-button" >Жилая</label>
+                       
+                    
+                        <input type="radio" name="select" id="commerce" value="commerce">
+                        <label for="commerce"  class="right-button" >Коммерческая</label>
+                    </div>
+
+                    <div class="filter-block__selector__menu__checkboxes">
+                        <input type="checkbox" class="custom-checkbox"  value="new" id="newCheck"/>
+                           <label for="newCheck">
+                            Квартира в новостройке
+                          </label>
+
+                          <input type="checkbox" class="custom-checkbox" value="old" id="oldCheck"/>
+                          <label for="oldCheck">
+                            Квартира во вторичке
+                          </label>
+                        
+                    </div>
+
+                    <div class="filter-block__selector__menu__checkboxes">
+                        <input type="checkbox" class="custom-checkbox"  value="room" id="room"/>
+                           <label for="room">
+                            Комната
+                          </label>
+
+                          <input type="checkbox" class="custom-checkbox" value="half" id="half"/>
+                          <label for="half">
+                            Доля
+                          </label>
+                        
+                    </div>
+
+                    <div class="filter-block__selector__menu__checkboxes last">
+                        <input type="checkbox" class="custom-checkbox"  value="house" id="house"/>
+                           <label for="house">
+                            Дом или дача
+                          </label>
+
+                          <input type="checkbox" class="custom-checkbox" value="halfhouse" id="halfhouse"/>
+                          <label for="halfhouse">
+                            Часть дома
+                          </label>
+
+                           <input type="checkbox" class="custom-checkbox"  value="townhouse" id="townhouse"/>
+                           <label for="townhouse">
+                           Таунхаус
+                          </label>
+
+                          <input type="checkbox" class="custom-checkbox" value="garden" id="garden"/>
+                          <label for="garden">
+                            Участок
+                          </label>
+                        
+                    </div>
+            
+                </div>
+            </div>
+
+
+            <div class="filter-block__selector">
+                Комнатность <img src="./images/path2.png" alt="p2"/>
+                <div class="filter-block__selector__menu  room-count">
+                    <div class="filter-block__selector__menu__buttons room-count">
+
+                        <input type="radio" name="roomCount" id="oneRoom" value="1">
+                        <label for="oneRoom" >1</label>
+                       
+                    
+                        <input type="radio" name="roomCount" id="twoRoom" value="2">
+                        <label for="twoRoom" >2</label>
+
+                        <input type="radio" name="roomCount" id="threeRoom" value="3">
+                        <label for="threeRoom" >3</label>
+
+                        <input type="radio" name="roomCount" id="fourRoom" value="4">
+                        <label for="fourRoom" >4</label>
+
+                        <input type="radio" name="roomCount" id="fiveRoom" value="5">
+                        <label for="fiveRoom" >5+</label>
+
+                    </div>
+
+                
+
+                 
+
+                    <div class="filter-block__selector__menu__checkboxes last">
+                        
+
+                           <input type="checkbox" class="custom-checkbox"  value="studio" id="studio"/>
+                           <label for="studio">
+                           Студия
+                          </label>
+
+                          <input type="checkbox" class="custom-checkbox" value="freePlan" id="freePlan"/>
+                          <label for="freePlan">
+                            Свободная планировка
+                          </label>
+                        
+                    </div>
+            
+                </div>
+            </div>
+
+
+            <div class="filter-block__selector price-selector">
+                <input class="price-selector__output" type="text" value="2,3 — 4,7 млн" disabled/>
+                <div class="filter-block__selector__menu filter-block__selector__price">
+                    <div class="filter-block__selector__price__from">
+                        <input type="text" id="priceFrom" placeholder="от"/> &#8381;
+                    </div>
+
+                    <div class="filter-block__selector__price__to">
+                        <input type="text" id="priceTo" placeholder="до"/> &#8381;
+
+
+                    </div>
+                    
+                    
+
+                </div>
+               
+            </div>
+
+
+            <div class="filter-block__selector address-selector">
+                <input class="address-selector__output" type="text" placeholder="Район, улица, дом или ЖК" disabled/>
+
+                <div class="filter-block__selector__menu address-selector__lists">
+                   <div class="address-selector__lists__item">
+                    <p>Адрес</p>
+                    <ul  id="addressSelector">
+                        <li >Железнодорожников, 7, Картымский</li>
+                        <li >Железнодорожная, 21, Винзили</li>
+                        <li >Железнодорожников, 3, Картымский</li>
+                        <li >Железнодорожников, 4, Картымский</li>
+                        <li >Железнодорожников, 6, Картымский</li>
+                    </ul>
+                   </div>
+
+                   <div class="address-selector__lists__item">
+                    <p>Район</p>
+                    <ul id="regionSelector">
+                        <li >Железнодорожный</li>
+            
+                    </ul>
+                   </div>
+
+                   <div class="address-selector__lists__item">
+                    <p>Жилой комплекс</p>
+                    <ul id="complexSelector">
+                        <li>Жужа</li>
+            
+                    </ul>
+
+
+                   </div>
+
+
+                    
+                    
+
+                </div>
+                <button class="filter-block__button red-button">
+                    Поиск
+                </button>
+            </div>
+
+           
+
+
+               
+
+            
+
+        </div>
+
+        <div class="main-block__cards">
+            <div class="main-block__cards__item">
+                <div class="main-block__cards__item__text">
+                    <h3>Ипотека онлайн</h3>
+                    <p>Поможем получить одобрение банков, чтобы вы могли</p>
+                    <img src="./images/arrowright.png" alt="j" />
+                </div>
+                <img src="./images/card1.png" alt="c1">
+            
+            </div>
+
+
+            <div class="main-block__cards__item">
+                <div class="main-block__cards__item__text">
+                    <h3>Поменяем на новую</h3>
+                    <p>Поможем получить одобрение банков, чтобы вы могли</p>
+                    <img src="./images/arrowright.png" alt="j" />
+                </div>
+                <img src="./images/card2.png" alt="c1">
+            
+            </div>
+
+            <div class="main-block__cards__item">
+                <div class="main-block__cards__item__text">
+                    <h3>Оценка стоимости</h3>
+                    <p>Поможем получить одобрение банков, чтобы вы могли</p>
+                    <img src="./images/arrowright.png" alt="j" />
+                </div>
+                <img src="./images/card3.png" alt="c1">
+            
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <div class="swiper-block">
+        <div class="swiper-block__header">
+            <div class="swiper-block__header__text">
+                <h2>Эксклюзивные варианты</h2>
+                <p>В данном случае я выступаю в роли Морфеуса — лишь указываю на дверь, 
+                    войти 
+                    придётся самостоятельно. </p>
+
+            </div>
+
+            <button class="swiper-block__header__button white-button">
+                Все эксклюзивы
+            </button>
+
+        </div>
+
+       
+
+       
+
+    
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/slider.png" alt="s1"/>
+                    <div class="swiper-slide__info">
+                        <div class="swiper-slide__info__text">
+                            <button class="swiper-slide__info__text__button">Кухня в подарок</button>
+                            <div class="swiper-slide__info__text__price">
+                                <div class="swiper-slide__info__text__price__price">
+                                <h1>13 750 000 ₽</h1>
+                                <h3>3-к квартира,   57м2,   12/15 эт.</h3>
+                                <p>Коминтерновский район, Московский проспект,114</p>
+                            </div>
+
+                            <div class="swiper-slide__info__text__price__buttons">
+                                <button class="swiper-slide__info__text__price__buttons__heart"><img src="./images/heart.png" alt="h" /></button>
+                                <button class="swiper-slide__info__text__price__buttons red-button">Показать номер</button>
+                            </div>
+
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slider.png" alt="s1"/>
+                    <div class="swiper-slide__info">
+                        <div class="swiper-slide__info__text">
+                            <button class="swiper-slide__info__text__button">Кухня в подарок</button>
+                            <div class="swiper-slide__info__text__price">
+                                <div class="swiper-slide__info__text__price__price">
+                                <h1>13 750 000 ₽</h1>
+                                <h3>3-к квартира,   57м2,   12/15 эт.</h3>
+                                <p>Коминтерновский район, Московский проспект,114</p>
+                            </div>
+
+                            <div class="swiper-slide__info__text__price__buttons">
+                                <button class="swiper-slide__info__text__price__buttons__heart"><img src="./images/heart.png" alt="h" /></button>
+                                <button class="swiper-slide__info__text__price__buttons red-button">Показать номер</button>
+                            </div>
+
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/slider.png" alt="s1"/>
+                    <div class="swiper-slide__info">
+                        <div class="swiper-slide__info__text">
+                            <button class="swiper-slide__info__text__button">Кухня в подарок</button>
+                            <div class="swiper-slide__info__text__price">
+                                <div class="swiper-slide__info__text__price__price">
+                                <h1>13 750 000 ₽</h1>
+                                <h3>3-к квартира,   57м2,   12/15 эт.</h3>
+                                <p>Коминтерновский район, Московский проспект,114</p>
+                            </div>
+
+                            <div class="swiper-slide__info__text__price__buttons">
+                                <button class="swiper-slide__info__text__price__buttons__heart"><img src="./images/heart.png" alt="h" /></button>
+                                <button class="swiper-slide__info__text__price__buttons red-button">Показать номер</button>
+                            </div>
+
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/slider.png" alt="s1"/>
+                    <div class="swiper-slide__info">
+                        <div class="swiper-slide__info__text">
+                            <button class="swiper-slide__info__text__button">Кухня в подарок</button>
+                            <div class="swiper-slide__info__text__price">
+                                <div class="swiper-slide__info__text__price__price">
+                                <h1>13 750 000 ₽</h1>
+                                <h3>3-к квартира,   57м2,   12/15 эт.</h3>
+                                <p>Коминтерновский район, Московский проспект,114</p>
+                            </div>
+
+                            <div class="swiper-slide__info__text__price__buttons">
+                                <button class="swiper-slide__info__text__price__buttons__heart"><img src="./images/heart.png" alt="h" /></button>
+                                <button class="swiper-slide__info__text__price__buttons red-button">Показать номер</button>
+                            </div>
+
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+                <div class="swiper-mybutton-next"></div>
+                <div class="swiper-mybutton-prev"></div>
+        
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__menu menu">
+            <div class="menu__logo">
+                <img src="./images/logo2.png" alt="l"/>
+            </div>
+    
+            <div class="menu__categories"> 
+                <ul class="footer menu__list">
+                    <li class="menu__list__option">Каталог недвижимости</li>
+                    <li class="menu__list__option">Ипотека</li>
+                    <li class="menu__list__option">О нас</li>
+                    <li class="menu__list__option">Карьера</li>
+                    <li class="menu__list__option">Отзывы</li>
+                    <li class="menu__list__option">Вакансии</li>
+                    <li class="menu__list__option">Прочее</li>
+                </ul>
+                <button class="menu__button red-button">
+                    Офисы и контакты
+                </button>
+    
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>©2000-2022 Компания «Траст». Все права защищены. При использовании материалов гиперссылка обязательна.</p>
+            <img src="./images/vk.png" alt="vk">
+
+        </div>
+    </footer>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-mybutton-next",
+        prevEl: ".swiper-mybutton-prev",
+      },
+    });
+        
+      </script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
