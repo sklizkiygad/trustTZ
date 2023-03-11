@@ -145,6 +145,7 @@ a{
     position: absolute;
     background: white;
     top: 70px;
+    flex-wrap: wrap;
     left: 0;
     right: 0;
     padding: 24px 60px;
@@ -227,6 +228,11 @@ a{
   margin: 42px 0;
   flex-wrap: wrap;
  }
+ @media(max-width:768px){
+  .filter-block{
+    gap: 20px;
+   }
+ }
 
  .filter-block__selector{
   display: flex;
@@ -257,6 +263,7 @@ a{
   background: white;
   padding: 20px;
   opacity: 0;
+  z-index: 9;
   visibility: hidden;
   transition: 0.5s;
  }
