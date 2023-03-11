@@ -71,3 +71,8 @@
   left: 0;
   bottom: 0;
  }
+ @media (max-width: 760px) {
+  .swiper-slide__info{
+    display: none;
+   }
+ }
