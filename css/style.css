@@ -77,6 +77,12 @@ a{
     border-bottom: 2px solid transparent;
   }
 
+  @media(max-width:1391px){
+    .menu__list__option{
+      padding: 0;
+    }
+  }
+
   .menu__list__option:hover{
     border-bottom: 2px solid #DC1919;
   }
@@ -509,6 +515,13 @@ a{
   width: 50%;
   /* position: absolute;
   bottom: 10px; */
+ }
+
+ @media (max-width: 1399px) {
+  .main-block__cards__item__text + img{
+    width: auto;
+  
+   }
  }
 
  .swiper-block{
