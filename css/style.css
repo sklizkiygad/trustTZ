@@ -83,7 +83,7 @@ a{
     }
   }
 
-  .menu__list__option:hover{
+  .menu__list__option:hover, .menu__list__option:active{
     border-bottom: 2px solid #DC1919;
   }
 
@@ -379,6 +379,14 @@ a{
     border-right: 1px solid #DEDEDE;
     border-top: none;
     border-bottom: none;
+ }
+ .filter-block__search{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 10px;
+  flex: 1 1 auto;
  }
  .price-selector__output{
   outline: none;
